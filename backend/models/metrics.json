@@ -1,0 +1,31 @@
+{
+  "pr_auc": 0.2617,
+  "recall_at_p80": 0.0,
+  "confusion_matrix": [
+    [
+      420,
+      28
+    ],
+    [
+      40,
+      12
+    ]
+  ],
+  "training_sample_count": 2500,
+  "feature_names": [
+    "days_since_policy_start",
+    "claim_amount",
+    "claim_amount_log",
+    "prior_claims_count",
+    "claim_month",
+    "claim_day_of_week",
+    "amount_to_prior_claims_ratio",
+    "incident_type_auto_collision",
+    "incident_type_water_damage",
+    "incident_type_theft_burglary",
+    "incident_type_fire_damage",
+    "incident_type_slip_and_fall",
+    "incident_type_hail_damage"
+  ],
+  "model_version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: insurance-claims-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        value: sqlite:///./claims.db
+      - key: ALLOWED_ORIGINS
+        sync: false
